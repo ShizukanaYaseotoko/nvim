@@ -35,3 +35,8 @@ map("n", "<leader>ga", function() Snacks.picker.grep_buffers() end, { desc = "Gr
 
 -- Colorscheme picker
 map("n", "<leader>ut", function() Snacks.picker.colorschemes() end, { desc = "Switch the color scheme" })
+
+-- Trouble
+map("n", "<leader>tx", "<CMD>Trouble diagnostics toggle<CR>", { desc = "Diagnostics (Trouble)" })
+map("n", "<leader>tb", "<CMD>Trouble diagnostics toggle filter.buf=0<CR>", { desc = "Buffer diagnostics (Trouble)" })
+map("n", "<leader>tq", "<CMD>Trouble qflist toggle<CR>", { desc = "Trouble quickfix list" })
