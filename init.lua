@@ -1,5 +1,5 @@
 require("config.lazy")
 require("config.mappings")
 
+require("config.restore-colorscheme")
 require("mason").setup()
-require("persistence").load({ last = true })
