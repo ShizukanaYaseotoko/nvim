@@ -13,6 +13,17 @@ map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions" })
 map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 
+-- Pywal
+map("n", "rs", function()
+    require("pywal16").setup()
+    require("lualine").setup(
+        {
+            theme = "pywal16"
+        }
+    )
+end, { desc = "Set theme to pywal" })
+map("n", "rs", "<CMD>colorscheme pywal16<CR>", { desc = "Set theme to pywal" })
+
 -- Find
 map("n", "<leader>fb", function() Snacks.picker.buffers() end, { desc = "Search buffers" })
 map("n", "<leader>fc", function() Snacks.picker.command_history() end, { desc = "Show commands history" })
