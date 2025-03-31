@@ -1,3 +1,1 @@
-return {
-    "Massolari/lsp-auto-setup.nvim"
-}
+return { "Massolari/lsp-auto-setup.nvim" }
