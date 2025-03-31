@@ -4,4 +4,5 @@ require("config.lazy")
 require("config.mappings")
 
 require("config.restore-colorscheme")
+require("lualine").setup()
 require("mason").setup()
