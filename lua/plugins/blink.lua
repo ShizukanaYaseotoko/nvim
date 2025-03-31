@@ -26,7 +26,7 @@ return {
                 auto_show_delay_ms = 0,
                 window = {
                     winblend = 30,
-                }
+                },
             },
             menu = {
                 winblend = 30,
