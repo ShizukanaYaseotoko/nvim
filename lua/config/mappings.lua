@@ -13,6 +13,8 @@ map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions" })
 map("n", "<leader>cx", "<CMD>ContextToggle<CR>", { desc = "Go to definition" })
 map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+map("n", "<leader>rf", function() Snacks.rename.rename_file() end, { desc = "Rename File" })
+map("n", "<leader>ra", "<CMD>lua vim.lsp.buf.rename()<CR>", { desc = "Rename" })
 
 -- Pywal
 map("n", "rs", function()
