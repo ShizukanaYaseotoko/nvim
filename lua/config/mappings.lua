@@ -4,28 +4,28 @@ map("n", ";", ":")
 map("n", "<leader>x", vim.cmd.bdelete)
 map("n", "<tab>", vim.cmd.bnext)
 map("n", "<S-tab>", vim.cmd.bprev)
-map("n", "<leader>l", "<CMD>Lazy<CR>")
-map("n", "<leader>m", "<CMD>Mason<CR>")
-map("n", "<leader>n", "<CMD>set nu!<CR>")
-map("n", "<leader>rn", "<CMD>set rnu!<CR>")
+map("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Open Lazy" })
+map("n", "<leader>m", "<CMD>Mason<CR>", { desc = "Open Mason" })
+map("n", "<leader>n", "<CMD>set nu!<CR>", { desc = "Toggle line numbers" })
+map("n", "<leader>rn", "<CMD>set rnu!<CR>", { desc = "Toggle relative line numbers" })
 
 -- Find
-map("n", "<leader>fb", function() Snacks.picker.buffers() end)
-map("n", "<leader>fc", function() Snacks.picker.command_history() end)
-map("n", "<leader>ff", function() Snacks.picker.files() end)
-map("n", "<leader>fj", function() Snacks.picker.jumps() end)
+map("n", "<leader>fb", function() Snacks.picker.buffers() end, { desc = "Search buffers" })
+map("n", "<leader>fc", function() Snacks.picker.command_history() end, { desc = "Show commands history" })
+map("n", "<leader>ff", function() Snacks.picker.files() end, { desc = "Search files" })
+map("n", "<leader>fj", function() Snacks.picker.jumps() end, { desc = "Search jumps" })
 
 -- Notifications
-map("n", "<leader>fn", function() Snacks.notifier.show_history() end)
-map("n", "<leader>dn", function() Snacks.notifier.hide() end)
+map("n", "<leader>fn", function() Snacks.notifier.show_history() end, { desc = "Show notification history" })
+map("n", "<leader>dn", function() Snacks.notifier.hide() end, { desc = "Dismiss all notifications" })
 
 -- Explorer
-map("n", "<leader>e", function() Snacks.picker.explorer() end)
+map("n", "<leader>e", function() Snacks.picker.explorer() end, { desc = "Toggle file explorer" })
 
 -- Grep
-map("n", "<leader>gf", function() Snacks.picker.grep() end)
-map("n", "<leader>gc", function() Snacks.picker.lines() end)
-map("n", "<leader>gb", function() Snacks.picker.grep_buffers() end)
+map("n", "<leader>gf", function() Snacks.picker.grep() end, { desc = "Grep all files" })
+map("n", "<leader>gc", function() Snacks.picker.lines() end, { desc = "Grep the current buffer" })
+map("n", "<leader>gb", function() Snacks.picker.grep_buffers() end, { desc = "Grep all buffers" })
 
 -- Colorscheme picker
-map("n", "<leader>ut", function() Snacks.picker.colorschemes() end)
+map("n", "<leader>ut", function() Snacks.picker.colorschemes() end, { desc = "Switch the color scheme" })
