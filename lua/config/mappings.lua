@@ -6,6 +6,8 @@ map("n", "<tab>", vim.cmd.bnext)
 map("n", "<S-tab>", vim.cmd.bprev)
 map("n", "<leader>l", "<CMD>Lazy<CR>")
 map("n", "<leader>m", "<CMD>Mason<CR>")
+map("n", "<leader>n", "<CMD>set nu!<CR>")
+map("n", "<leader>rn", "<CMD>set rnu!<CR>")
 
 -- Find
 map("n", "<leader>fb", function() Snacks.picker.buffers() end)
