@@ -20,7 +20,18 @@ return {
         appearance = {
             nerd_font_variant = 'mono',
         },
-        completion = { documentation = { auto_show = true, auto_show_delay_ms = 0 } },
+        completion = {
+            documentation = {
+                auto_show = true,
+                auto_show_delay_ms = 0,
+                window = {
+                    winblend = 30,
+                }
+            },
+            menu = {
+                winblend = 30,
+            },
+        },
         sources = {
             default = { 'lsp', 'path', 'snippets', 'buffer' },
         },

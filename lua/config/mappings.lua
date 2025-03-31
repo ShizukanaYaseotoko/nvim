@@ -12,6 +12,7 @@ map("n", "<leader>fb", function() Snacks.picker.buffers() end)
 map("n", "<leader>fc", function() Snacks.picker.command_history() end)
 map("n", "<leader>fn", function() Snacks.picker.notifications() end)
 map("n", "<leader>ff", function() Snacks.picker.files() end)
+map("n", "<leader>fj", function() Snacks.picker.jumps() end)
 
 -- Explorer
 map("n", "<leader>e", function() Snacks.picker.explorer() end)
