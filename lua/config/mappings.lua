@@ -1,6 +1,9 @@
 local map = vim.keymap.set
 
 map("n", ";", ":")
+map("n", "<leader>x", vim.cmd.bdelete)
+map("n", "<tab>", vim.cmd.bnext)
+map("n", "<S-tab>", vim.cmd.bprev)
 map("n", "<leader>l", "<CMD>Lazy<CR>")
 map("n", "<leader>m", "<CMD>Mason<CR>")
 
