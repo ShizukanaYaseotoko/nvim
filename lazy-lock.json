@@ -1,5 +1,6 @@
 {
   "auto-session": { "branch": "main", "commit": "317412742990371f8e4709074da5c378456a27ff" },
+  "barbar.nvim": { "branch": "master", "commit": "807bede7ef1d8e2ac5f108e9ac8123b1e2d321e3" },
   "blink.cmp": { "branch": "main", "commit": "49f211fe5d729df53df4c042d7c3464cf47d199e" },
   "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
