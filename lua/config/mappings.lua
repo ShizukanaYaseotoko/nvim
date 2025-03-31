@@ -9,6 +9,9 @@ map("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Open Lazy" })
 map("n", "<leader>m", "<CMD>Mason<CR>", { desc = "Open Mason" })
 map("n", "<leader>n", "<CMD>set nu!<CR>", { desc = "Toggle line numbers" })
 map("n", "<leader>rn", "<CMD>set rnu!<CR>", { desc = "Toggle relative line numbers" })
+map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions" })
+map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
+map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 
 -- Find
 map("n", "<leader>fb", function() Snacks.picker.buffers() end, { desc = "Search buffers" })
