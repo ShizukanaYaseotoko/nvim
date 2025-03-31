@@ -10,7 +10,7 @@ map("n", "<leader>m", "<CMD>Mason<CR>")
 -- Find
 map("n", "<leader>fb", function() Snacks.picker.buffers() end)
 map("n", "<leader>fc", function() Snacks.picker.command_history() end)
-map("n", "<leader>fn", function() Snacks.picker.notification_history() end)
+map("n", "<leader>fn", function() Snacks.picker.notifications() end)
 map("n", "<leader>ff", function() Snacks.picker.files() end)
 
 -- Explorer
