@@ -15,6 +15,12 @@ map("n", "<leader>fc", function() Snacks.picker.command_history() end, { desc = 
 map("n", "<leader>ff", function() Snacks.picker.files() end, { desc = "Search files" })
 map("n", "<leader>fj", function() Snacks.picker.jumps() end, { desc = "Search jumps" })
 
+-- Git
+map("n", "<leader>gl", function() Snacks.picker.git_log() end, { desc = "Git log" })
+map("n", "<leader>gd", function() Snacks.picker.git_diff() end, { desc = "Git diff" })
+map("n", "<leader>gs", function() Snacks.picker.git_status() end, { desc = "Git status" })
+map("n", "<leader>gb", function() Snacks.picker.git_branches() end, { desc = "Git branches" })
+
 -- Notifications
 map("n", "<leader>fn", function() Snacks.notifier.show_history() end, { desc = "Show notification history" })
 map("n", "<leader>dn", function() Snacks.notifier.hide() end, { desc = "Dismiss all notifications" })
@@ -25,7 +31,7 @@ map("n", "<leader>e", function() Snacks.picker.explorer() end, { desc = "Toggle 
 -- Grep
 map("n", "<leader>gf", function() Snacks.picker.grep() end, { desc = "Grep all files" })
 map("n", "<leader>gc", function() Snacks.picker.lines() end, { desc = "Grep the current buffer" })
-map("n", "<leader>gb", function() Snacks.picker.grep_buffers() end, { desc = "Grep all buffers" })
+map("n", "<leader>ga", function() Snacks.picker.grep_buffers() end, { desc = "Grep all buffers" })
 
 -- Colorscheme picker
 map("n", "<leader>ut", function() Snacks.picker.colorschemes() end, { desc = "Switch the color scheme" })
