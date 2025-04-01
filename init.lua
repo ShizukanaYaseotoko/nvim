@@ -1,5 +1,6 @@
 require("config.options")
 require("config.lazy")
+require("config.ufo")
 require("config.autocmds.restore-colorscheme")
 require("config.autocmds.format-on-write")
 require("config.autocmds.lsp-progress-notification")
