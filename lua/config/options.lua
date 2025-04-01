@@ -9,7 +9,6 @@ vim.opt.undofile = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 
-vim.opt.foldmethod = "manual"
 vim.opt.foldlevel = 99
 vim.opt.foldenable = true
 
