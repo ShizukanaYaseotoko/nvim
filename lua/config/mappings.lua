@@ -18,7 +18,7 @@ map("n", "<leader>rf", function() Snacks.rename.rename_file() end, { desc = "Ren
 map("n", "<leader>ra", "<CMD>lua vim.lsp.buf.rename()<CR>", { desc = "Rename" })
 
 -- Pywal
-map("n", "rs", function()
+map("n", "<leader>rs", function()
     require("pywal16").setup()
     require("lualine").setup(
         {
