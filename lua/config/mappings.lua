@@ -2,6 +2,8 @@ local map = vim.keymap.set
 local wk = require("which-key")
 
 map("n", ";", ":")
+map("n", "j", "gj")
+map("n", "k", "gk")
 map("n", "<leader>x", vim.cmd.bdelete)
 map("n", "<tab>", vim.cmd.bnext)
 map("n", "<S-tab>", vim.cmd.bprev)
