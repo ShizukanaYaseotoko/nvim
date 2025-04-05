@@ -2,7 +2,7 @@ require("config.options")
 require("config.lazy")
 require("config.ufo")
 require("config.autocmds.restore-colorscheme")
-require("config.autocmds.format-on-write")
+require("lua.config.autocmds.formatting")
 require("config.autocmds.lsp-progress-notification")
 require("config.autocmds.sort-barbar")
 
