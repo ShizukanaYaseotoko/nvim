@@ -19,6 +19,13 @@ map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 map("n", "<leader>rf", function() Snacks.rename.rename_file() end, { desc = "Rename File" })
 map("n", "<leader>ra", "<CMD>lua vim.lsp.buf.rename()<CR>", { desc = "Rename" })
 
+-- Debugging
+map("n", "<F9>", function() require("dap").continue() end)
+map("n", "<F10>", function() require("dap").step_over() end)
+map("n", "<F11>", function() require("dap").step_into() end)
+map("n", "<F12>", function() require("dap").step_out() end)
+map("n", "<leader>b", function() require("dap").toggle_breakpoint() end)
+
 -- Pywal
 map("n", "<leader>rs", function()
     require("pywal16").setup()
