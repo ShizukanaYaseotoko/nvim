@@ -35,7 +35,7 @@ map("n", "<leader>rs", function()
         }
     )
 end, { desc = "Set theme to pywal" })
-map("n", "rs", "<CMD>colorscheme pywal16<CR>", { desc = "Set theme to pywal" })
+map("n", "<leader>rs", "<CMD>colorscheme pywal16<CR>", { desc = "Set theme to pywal" })
 
 -- Find
 map("n", "<leader>fb", function() Snacks.picker.buffers() end, { desc = "Search buffers" })
