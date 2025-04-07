@@ -12,6 +12,8 @@ vim.wo.relativenumber = true
 vim.opt.foldlevel = 99
 vim.opt.foldenable = true
 
+vim.opt.conceallevel = 2
+
 vim.diagnostic.config({
     virtual_text = true,
     signs = {
