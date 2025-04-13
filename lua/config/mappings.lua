@@ -9,10 +9,16 @@ map("n", "<tab>", vim.cmd.bnext)
 map("n", "<S-tab>", vim.cmd.bprev)
 map("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Open Lazy" })
 map("n", "<leader>m", "<CMD>Mason<CR>", { desc = "Open Mason" })
+
+-- View
 map("n", "<leader>z", function() Snacks.zen() end, { desc = "Toggle zen mode" })
 map("n", "<leader>Z", function() Snacks.zen.zoom() end, { desc = "Toggle zoom" })
 map("n", "<leader>n", "<CMD>set nu!<CR>", { desc = "Toggle line numbers" })
 map("n", "<leader>rn", "<CMD>set rnu!<CR>", { desc = "Toggle relative line numbers" })
+map("n", "<leader>v", "<CMD>vsplit<CR>", { desc = "Create a vertical split" })
+map("n", "<leader>h", "<CMD>split<CR>", { desc = "Create a horizontal split" })
+
+-- LSP actions
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions" })
 map("n", "<leader>cx", "<CMD>ContextToggle<CR>", { desc = "Toggle context" })
 map("n", "<leader>cs", function() require("aerial").snacks_picker() end, { desc = "Search symbols" })
