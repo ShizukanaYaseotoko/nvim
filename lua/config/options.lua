@@ -35,9 +35,9 @@ vim.diagnostic.config({
 vim.api.nvim_create_autocmd("ColorScheme", {
 	pattern = "*",
 	callback = function()
-		vim.api.nvim_set_hl(0, 'DapBreakpoint', { ctermbg = 0, fg = '#993939' })
-		vim.api.nvim_set_hl(0, 'DapLogPoint', { ctermbg = 0, fg = '#61afef' })
-		vim.api.nvim_set_hl(0, 'DapStopped', { ctermbg = 0, fg = '#98c379' })
+		vim.api.nvim_set_hl(0, 'DapBreakpoint', { ctermbg = 0, fg = '#D03939' })
+		vim.api.nvim_set_hl(0, 'DapLogPoint', { ctermbg = 0, fg = '#61A7FF' })
+		vim.api.nvim_set_hl(0, 'DapStopped', { ctermbg = 0, fg = '#6AE160' })
 	end
 })
 
