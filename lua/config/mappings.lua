@@ -11,8 +11,8 @@ map("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Open Lazy" })
 map("n", "<leader>m", "<CMD>Mason<CR>", { desc = "Open Mason" })
 
 -- View
-map("n", "<leader>z", function() Snacks.zen() end, { desc = "Toggle zen mode" })
-map("n", "<leader>Z", function() Snacks.zen.zoom() end, { desc = "Toggle zoom" })
+map("n", "<leader>Z", function() Snacks.zen() end, { desc = "Toggle zen mode" })
+map("n", "<leader>z", function() Snacks.zen.zoom() end, { desc = "Toggle zoom" })
 map("n", "<leader>n", "<CMD>set nu!<CR>", { desc = "Toggle line numbers" })
 map("n", "<leader>rn", "<CMD>set rnu!<CR>", { desc = "Toggle relative line numbers" })
 map("n", "<leader>v", "<CMD>vsplit<CR>", { desc = "Create a vertical split" })
