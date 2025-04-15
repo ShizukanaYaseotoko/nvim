@@ -9,6 +9,7 @@ map("n", "<tab>", vim.cmd.bnext)
 map("n", "<S-tab>", vim.cmd.bprev)
 map("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Open Lazy" })
 map("n", "<leader>m", "<CMD>Mason<CR>", { desc = "Open Mason" })
+map("n", "<leader>cp", "<CMD>Colortils<CR>", { desc = "Color picker" })
 
 -- View
 map("n", "<leader>Z", function() Snacks.zen() end, { desc = "Toggle zen mode" })
