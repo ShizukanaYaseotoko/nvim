@@ -11,5 +11,4 @@ require("config.mappings")
 
 require("lualine").setup()
 require("mason").setup()
-require("lsp-auto-setup").setup()
 require("gitsigns").setup()
