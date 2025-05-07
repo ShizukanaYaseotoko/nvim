@@ -38,14 +38,14 @@ map("n", "<leader>b", function() require("dap").toggle_breakpoint() end)
 
 -- Pywal
 map("n", "<leader>rs", function()
-    require("pywal16").setup()
-    require("lualine").setup(
-        {
-            theme = "pywal16"
+    require("lualine").setup {
+        options = {
+            theme = "pywal"
         }
-    )
-end, { desc = "Set theme to pywal" })
-map("n", "<leader>rs", "<CMD>colorscheme pywal16<CR>", { desc = "Set theme to pywal" })
+    }
+    require("pywal16").setup()
+end,
+{ desc = "Set theme to pywal" })
 
 -- Find
 map("n", "<leader>fb", function() Snacks.picker.buffers() end, { desc = "Search buffers" })
@@ -72,7 +72,14 @@ map("n", "<leader>gc", function() Snacks.picker.lines() end, { desc = "Grep the 
 map("n", "<leader>ga", function() Snacks.picker.grep_buffers() end, { desc = "Grep all buffers" })
 
 -- Colorscheme picker
-map("n", "<leader>ut", function() Snacks.picker.colorschemes() end, { desc = "Switch the color scheme" })
+map("n", "<leader>ut", function() 
+    Snacks.picker.colorschemes()
+    require("lualine").setup {
+        options = {
+            theme = "auto"
+        }
+    }
+end, { desc = "Switch the color scheme" })
 
 -- Trouble
 map("n", "<leader>tx", "<CMD>Trouble diagnostics toggle<CR>", { desc = "Diagnostics (Trouble)" })
