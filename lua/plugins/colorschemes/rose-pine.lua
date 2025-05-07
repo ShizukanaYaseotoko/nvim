@@ -1,1 +1,1 @@
-return { "rose-pine/neovim" }
+return { "rose-pine/neovim", name = "rose-pine-theme" }

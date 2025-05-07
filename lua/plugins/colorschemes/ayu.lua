@@ -1,1 +1,1 @@
-return { "Shatur/neovim-ayu" }
+return { "Shatur/neovim-ayu", name = "ayu-theme" }
