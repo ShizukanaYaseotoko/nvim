@@ -15,7 +15,7 @@ vim.api.nvim_create_user_command("ToggleFormatting", toggle_lsp_formatting,
 vim.api.nvim_create_autocmd("BufWritePre", {
     pattern = "*",
     callback = function()
-        if vim.g.lsp_formatting_enabled and vim.lsp.get_clients()[0] ~= nil then
+        if vim.g.lsp_formatting_enabled then
             vim.lsp.buf.format()
         end
     end
