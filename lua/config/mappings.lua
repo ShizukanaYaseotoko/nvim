@@ -10,6 +10,7 @@ map("n", "<S-tab>", vim.cmd.bprev)
 map("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Open Lazy" })
 map("n", "<leader>m", "<CMD>Mason<CR>", { desc = "Open Mason" })
 map("n", "<leader>cp", "<CMD>Colortils<CR>", { desc = "Color picker" })
+map("n", "<leader>u", "<CMD>UndotreeToggle<CR>", { desc = "Toglle Undotree" })
 
 -- View
 map("n", "<leader>Z", function() Snacks.zen() end, { desc = "Toggle zen mode" })
@@ -38,14 +39,14 @@ map("n", "<leader>b", function() require("dap").toggle_breakpoint() end)
 
 -- Pywal
 map("n", "<leader>rs", function()
-    require("lualine").setup {
-        options = {
-            theme = "pywal"
+        require("lualine").setup {
+            options = {
+                theme = "pywal"
+            }
         }
-    }
-    require("pywal16").setup()
-end,
-{ desc = "Set theme to pywal" })
+        require("pywal16").setup()
+    end,
+    { desc = "Set theme to pywal" })
 
 -- Find
 map("n", "<leader>fb", function() Snacks.picker.buffers() end, { desc = "Search buffers" })
@@ -72,7 +73,7 @@ map("n", "<leader>gc", function() Snacks.picker.lines() end, { desc = "Grep the 
 map("n", "<leader>ga", function() Snacks.picker.grep_buffers() end, { desc = "Grep all buffers" })
 
 -- Colorscheme picker
-map("n", "<leader>ut", function() 
+map("n", "<leader>st", function()
     Snacks.picker.colorschemes()
     require("lualine").setup {
         options = {
