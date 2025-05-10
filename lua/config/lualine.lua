@@ -83,7 +83,7 @@ ins_left {
 ins_left {
     -- mode component
     function()
-        return ''
+        return '猫'
     end,
     color = function()
         -- auto change color according to neovims mode
