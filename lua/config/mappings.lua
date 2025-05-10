@@ -30,6 +30,7 @@ map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 map("n", "<leader>rf", function() Snacks.rename.rename_file() end, { desc = "Rename File" })
 map("n", "<leader>ra", "<CMD>lua vim.lsp.buf.rename()<CR>", { desc = "Rename" })
 map("n", "<leader>gi", "<CMD>Generate implementations<CR>", { desc = "Generate C/C++ implementations" })
+map("n", "<leader>gh", "<CMD>ClangdSwitchSourceHeader<CR>", { desc = "Go to header/implementation" })
 
 -- Debugging
 map("n", "<F9>", function() require("dap").continue() end)
