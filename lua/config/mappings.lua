@@ -41,14 +41,14 @@ map("n", "<leader>b", function() require("dap").toggle_breakpoint() end)
 
 -- Pywal
 map("n", "<leader>rs", function()
-        require("lualine").setup {
-            options = {
-                theme = "pywal"
-            }
+    require("lualine").setup {
+        options = {
+            theme = "pywal"
         }
-        require("pywal16").setup()
-    end,
-    { desc = "Set theme to pywal" })
+    }
+    require("pywal16").setup()
+end,
+{ desc = "Set theme to pywal" })
 
 -- Find
 map("n", "<leader>fb", function() Snacks.picker.buffers() end, { desc = "Search buffers" })
@@ -67,7 +67,7 @@ map("n", "<leader>fn", function() Snacks.notifier.show_history() end, { desc = "
 map("n", "<leader>dn", function() Snacks.notifier.hide() end, { desc = "Dismiss all notifications" })
 
 -- Explorer
-map("n", "<leader>e", function() Snacks.picker.explorer() end, { desc = "Toggle file explorer" })
+map("n", "<leader>e", "<CMD>Neotree toggle=true<CR>", { desc = "Toggle file explorer" })
 
 -- Grep
 map("n", "<leader>gf", function() Snacks.picker.grep() end, { desc = "Grep all files" })
