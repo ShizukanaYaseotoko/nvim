@@ -1,5 +1,6 @@
 vim.opt.winborder = "rounded"
 vim.opt.background = "dark"
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
