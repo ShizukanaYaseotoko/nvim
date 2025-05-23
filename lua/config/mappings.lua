@@ -9,7 +9,7 @@ map("n", "<tab>", vim.cmd.bnext)
 map("n", "<S-tab>", vim.cmd.bprev)
 map("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Open Lazy" })
 map("n", "<leader>m", "<CMD>Mason<CR>", { desc = "Open Mason" })
-map("n", "<leader>cp", "<CMD>Colortils<CR>", { desc = "Color picker" })
+map("n", "<leader>cp", "<CMD>PickColor<CR>", { desc = "Color picker" })
 map("n", "<leader>u", "<CMD>UndotreeToggle<CR>", { desc = "Toggle Undotree" })
 map("n", "<leader>bf", "<CMD>ToggleFormatting<CR>", { desc = "Toggle LSP formatting for the current buffer" })
 
