@@ -26,6 +26,7 @@ map("n", "<leader>h", "<CMD>split<CR>", { desc = "Create a horizontal split" })
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions" })
 map("n", "<leader>cx", "<CMD>ContextToggle<CR>", { desc = "Toggle context" })
 map("n", "<leader>cs", function() require("aerial").snacks_picker() end, { desc = "Search symbols" })
+map("n", "<leader>cu", function() Snacks.picker.lsp_references() end, { desc = "Find usages" })
 map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 map("n", "<leader>rf", function() Snacks.rename.rename_file() end, { desc = "Rename File" })
@@ -42,14 +43,14 @@ map("n", "<leader>b", function() require("dap").toggle_breakpoint() end)
 
 -- Pywal
 map("n", "<leader>rs", function()
-    require("lualine").setup {
-        options = {
-            theme = "pywal"
+        require("lualine").setup {
+            options = {
+                theme = "pywal"
+            }
         }
-    }
-    require("pywal16").setup()
-end,
-{ desc = "Set theme to pywal" })
+        require("pywal16").setup()
+    end,
+    { desc = "Set theme to pywal" })
 
 -- Find
 map("n", "<leader>fb", function() Snacks.picker.buffers() end, { desc = "Search buffers" })
