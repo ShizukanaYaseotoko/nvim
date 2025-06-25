@@ -5,5 +5,6 @@ return {
     { "projekt0n/github-nvim-theme", name = "GitHub Color Scheme" },
     { "rebelot/kanagawa.nvim",       name = "Kanagawa Color Scheme" },
     { "rose-pine/neovim",            name = "Rose Pine Color Scheme" },
-    { "ellisonleao/gruvbox.nvim",    name = "Gruvbox Color Scheme" }
+    { "ellisonleao/gruvbox.nvim",    name = "Gruvbox Color Scheme" },
+    { "Mofiqul/dracula.nvim",        name = "Dracula Color Scheme" }
 }
