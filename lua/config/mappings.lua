@@ -86,10 +86,8 @@ map("n", "<leader>st", function()
     }
 end, { desc = "Switch the color scheme" })
 
--- Trouble
-map("n", "<leader>tx", "<CMD>Trouble diagnostics toggle<CR>", { desc = "Diagnostics (Trouble)" })
-map("n", "<leader>tb", "<CMD>Trouble diagnostics toggle filter.buf=0<CR>", { desc = "Buffer diagnostics (Trouble)" })
-map("n", "<leader>tq", "<CMD>Trouble qflist toggle<CR>", { desc = "Trouble quickfix list" })
+-- Diagnostics
+map("n", "<leader>dx", function() Snacks.picker.diagnostics() end, { desc = "Diagnostics (Trouble)" })
 
 -- Silicon
 wk.add({
